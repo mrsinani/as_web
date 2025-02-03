@@ -634,9 +634,19 @@ video {
 .z-50 {
   z-index: 50;
 }
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -677,6 +687,15 @@ video {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
 .block {
   display: block;
 }
@@ -695,6 +714,90 @@ video {
 .max-h-\[calc\(100vh-120px\)\] {
   max-height: calc(100vh - 120px);
 }
+.max-h-\[0\] {
+  max-height: 0;
+}
+.max-h-\[100\] {
+  max-height: 100;
+}
+.max-h-\[1\] {
+  max-height: 1;
+}
+.max-h-\[10000\] {
+  max-height: 10000;
+}
+.max-h-\[calc\(50vh-120px\)\] {
+  max-height: calc(50vh - 120px);
+}
+.max-h-\[calc\(100vh-150px\)\] {
+  max-height: calc(100vh - 150px);
+}
+.max-h-\[calc\(100vh-1px\)\] {
+  max-height: calc(100vh - 1px);
+}
+.max-h-\[calc\(100vh-10px\)\] {
+  max-height: calc(100vh - 10px);
+}
+.max-h-\[calc\(100vh-200px\)\] {
+  max-height: calc(100vh - 200px);
+}
+.max-h-\[calc\(100vh-250px\)\] {
+  max-height: calc(100vh - 250px);
+}
+.max-h-\[calc\(100vh-100px\)\] {
+  max-height: calc(100vh - 100px);
+}
+.max-h-\[calc\(150vh-200px\)\] {
+  max-height: calc(150vh - 200px);
+}
+.max-h-\[calc\(200vh-200px\)\] {
+  max-height: calc(200vh - 200px);
+}
+.max-h-\[calc\(50vh-200px\)\] {
+  max-height: calc(50vh - 200px);
+}
+.max-h-\[calc\(120vh-200px\)\] {
+  max-height: calc(120vh - 200px);
+}
+.max-h-\[calc\(120vh-150px\)\] {
+  max-height: calc(120vh - 150px);
+}
+.max-h-\[calc\(120vh-140px\)\] {
+  max-height: calc(120vh - 140px);
+}
+.max-h-\[calc\(100vh-300px\)\] {
+  max-height: calc(100vh - 300px);
+}
+.max-h-\[calc\(200vh-300px\)\] {
+  max-height: calc(200vh - 300px);
+}
+.max-h-\[calc\(75vh-300px\)\] {
+  max-height: calc(75vh - 300px);
+}
+.max-h-\[calc\(200vh-75px\)\] {
+  max-height: calc(200vh - 75px);
+}
+.max-h-\[calc\(200vh-120px\)\] {
+  max-height: calc(200vh - 120px);
+}
+.max-h-\[calc\(200vh-150px\)\] {
+  max-height: calc(200vh - 150px);
+}
+.max-h-\[calc\(200vh-20px\)\] {
+  max-height: calc(200vh - 20px);
+}
+.max-h-\[calc\(120vh-120px\)\] {
+  max-height: calc(120vh - 120px);
+}
+.max-h-\[calc\(100vh-50px\)\] {
+  max-height: calc(100vh - 50px);
+}
+.max-h-\[calc\(120vh-50px\)\] {
+  max-height: calc(120vh - 50px);
+}
+.max-h-\[calc\(80vh-50px\)\] {
+  max-height: calc(80vh - 50px);
+}
 .min-h-\[80vh\] {
   min-height: 80vh;
 }
@@ -706,6 +809,9 @@ video {
 }
 .max-w-3xl {
   max-width: 48rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .list-inside {
   list-style-position: inside;
@@ -772,11 +878,19 @@ video {
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
 .overflow-hidden {
   overflow: hidden;
 }
 .overflow-y-auto {
   overflow-y: auto;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 .rounded-lg {
   border-radius: 0.5rem;
@@ -786,6 +900,9 @@ video {
 }
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .bg-\[\#3F322F\] {
   --tw-bg-opacity: 1;
@@ -830,6 +947,9 @@ video {
 .bg-\[\#4E6A5B\]\/90 {
   background-color: rgb(78 106 91 / 0.9);
 }
+.bg-\[white\]\/90 {
+  background-color: rgb(255 255 255 / 0.9);
+}
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
@@ -856,6 +976,30 @@ video {
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-40 {
+  padding-top: 10rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-60 {
+  padding-top: 15rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
+}
+.pt-3\.5 {
+  padding-top: 0.875rem;
+}
+.pt-2\.5 {
+  padding-top: 0.625rem;
+}
+.pt-16 {
+  padding-top: 4rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .text-center {
   text-align: center;
@@ -1129,6 +1273,10 @@ video {
 }
 
 @media (min-width: 768px) {
+
+  .md\:max-h-\[calc\(90vh-200px\)\] {
+    max-height: calc(90vh - 200px);
+  }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

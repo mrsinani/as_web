@@ -1,8 +1,14 @@
 "use client";
 import { motion } from 'framer-motion';
 
+const contentAnimation = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+};
+
 export default function Contact() {
     return (
+        
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

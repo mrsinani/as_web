@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects: React.FC = () => {
     return (
-        <section id="projects" className="pt-30 mt-30 bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
+        <section id="projects" className="pt-30 mt-30 bg-white bg-opacity-80 p-8 rounded-lg shadow-lg z-10 relative">
             <h2 className="mt-30 text-3xl font-bold mb-4 text-gray-800">Projects</h2>
             <div className="space-y-6">
                 <div>
@@ -28,4 +28,3 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
-

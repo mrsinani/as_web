@@ -14,7 +14,7 @@ export default function About() {
             animate="visible"
             transition={{ duration: 0.5 }}
             variants={contentAnimation}
-            className="max-w-3xl mx-auto bg-[#4E6A5B]/90 backdrop-blur-sm p-8 rounded-3xl shadow-lg mt-32"
+            className="max-w-3xl mx-auto bg-[#4E6A5B]/90 backdrop-blur-sm p-8 rounded-xl shadow-lg mt-32"
         >
             <h1 className="text-3xl font-bold mb-6 text-[#00000]">about me</h1>
             <div className="space-y-6 text-black">

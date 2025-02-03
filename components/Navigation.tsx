@@ -11,15 +11,15 @@ export default function Navigation() {
 
     return (
         <nav className="w-full fixed top-0 left-0 z-50 bg-[#] shadow-lg">
-            <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
-                <Link href="/" className="text-2xl font-bold text-[#5F7D6E] mb-4 sm:mb-0">
+            <div className="z-50 container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between ">
+                <Link href="/" className="z-50 text-2xl font-bold text-[#5F7D6E] mb-4 sm:mb-0">
                     personal website
                 </Link>
-                <div className="flex space-x-8">
+                <div className="z-50 flex space-x-8">
                     {/* Navigation links */}
                     {[
                         { href: '/about', label: 'ABOUT' },
-                        { href: '/projects', label: 'PROJECTS' },
+                        { href: '/projects', label: 'EXPERIENCE' },
                         { href: '/stats', label: 'STATS' },
                         { href: '/contact', label: 'CONTACT' },
                     ].map(({ href, label }) => (
@@ -27,8 +27,8 @@ export default function Navigation() {
                             key={href}
                             href={href}
                             className={cn(
-                                "text-[#5F7D6E]/100 hover:text-white transition-colors",
-                                isActive(href) && "text-white font-semibold"
+                                "z-50 text-[#5F7D6E]/100 hover:text-white transition-colors",
+                                isActive(href) && "z-50 text-white font-semibold"
                             )}
                         >
                             {label}

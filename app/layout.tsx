@@ -22,7 +22,7 @@ export default function RootLayout({
                 {/* <AuroraBackground className="min-h-screen"> */}
                 <div className="w-full">
                     <Navigation />
-                    <main className="container mx-auto px-4 py-8">
+                    <main className="container mx-auto px-4 py-8 z-50">
                         {children}
                     </main>
                 </div>

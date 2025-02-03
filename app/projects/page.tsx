@@ -3,55 +3,59 @@ import {motion} from 'framer-motion';
 
 export default function Projects() {
     const cardVariants = {
-        hidden: {y: 20, opacity: 0},
-        visible: {y: 0, opacity: 1}
+        hidden: {y: 10, opacity: 0},
+        visible: {y: -40, opacity: 1}
     };
 
     const projects = [
         {
-            title: "Personal Website",
-            description: "Built a responsive and visually appealing personal portfolio website using Next.js and Tailwind CSS, showcasing projects, skills, and achievements. Implemented dynamic routing and SEO optimization to enhance discoverability and user experience, while leveraging GitHub and Vercel for version control and continuous deployment.",
-            technologies: "Next.js, Tailwind CSS, React, JavaScript, HTML/CSS",
+            title: "Marketing and Project Management",
+            description: "Product Intern at Rendever",
+            description2: "I create promotional strategies that highlight product innovations and virtual events, reinforcing Rendever’s mission. I also host interactive virtual experiences, introducing innovative solutions to promote accessibility and inclusivity for diverse senior audiences.",
+            description3: "Lead Marketing Intern at Alfa Art Gallery",
+            description4: "I managed the gallery’s prestigious Middlesex County Grant, cultivating strong relationships with key grant representatives. I meticulously organized data, delegated tasks, and monitored progress to ensure seamless project execution.",
             delay: 0.2
         },
         {
-            title: "Chess3 | ETH Prague",
-            description: "Led frontend integration using React and Chess.js to create an interactive chessboard interface for Web3 users. Collaborated on backend implementation using Solidity, deploying smart contracts which enable secure, transparent betting between players.",
-            award: "Won the \"Best dApp Deployed on Linea\" award at ETH Prague 2024",
-            technologies: "Solidity, Web3.js, React, Ethereum, Linea",
+            title: "Client Relations",
+            description: "Benefit Consultant at Aflac",
+            description2: "I identified new clients and generated leads through strategic outreach and in-depth market research, while expertly managing customer interactions through CRM platforms.",
+            description3: "Public Relations Specialist",
+            description4: "I cultivated a loyal clientele through targeted marketing, social media, and personalized service, delivering exceptional VIP experiences and driving event attendance. I collaborated with management to design innovative event themes, using customer insights and analytics to refine strategies and maximize turnout.",
             delay: 0.2
         },
         {
-            title: "Attention Arsenal | HACKTCNJ",
-            description: "Collaborated in a team to set up a variety of programs that aid people struggling with ADHD.",
-            award: "Won Hackathon Award \"Most Creative Use of Twilio\"",
-            technologies: "Arduino, Python, Flask, Twilio API, HTML/CSS, JavaScript",
-            delay: 0.4
+            title: "Volunteering",
+            description: "Mission Ambassador at One Track International",
+            description2: "Led and executed a successful fundraising campaign, advancing the organization’s mission. Contributed to program development and played a key role in raising awareness of its core values.",
+            delay: 0.2
         },
     ];
 
     return (
-        <div className="pt-20 pb-10 max-h-[calc(100vh-120px)] overflow-y-auto">
+        <div className="pt-20 pb-20 ] z-10 overflow-y-auto">
             <motion.div
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 0.5}}
-                className="max-w-3xl mx-auto"
+                className="max-w-3xl mx-auto z-10"
             >
                 <div className="space-y-6">
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-lg"
+                            className="max-w-3xl mx-auto bg-[#4E6A5B]/90 backdrop-blur-sm p-8 rounded-3xl shadow-lg mt-20 z-10"
                             variants={cardVariants}
                             initial="hidden"
                             animate="visible"
                             transition={{delay: project.delay}}
+                            style={{ position: 'relative', top: '10px', overflow: 'hidden', maxHeight: '800px' }}
                         >
-                            {project.title && <h2 className="text-2xl font-bold text-black mb-4">{project.title}</h2>}
-                            {project.description && <p className="text-black mb-4">{project.description}</p>}
-                            {project.award && <p className="text-black font-semibold mb-2">{project.award}</p>}
-                            {project.technologies && <p className="text-black">Technologies: {project.technologies}</p>}
+                            {project.title && <h2 className="text-center text-2xl font-bold text-black mb-4">{project.title}</h2>}
+                            <p className="font-bold text-black text-lg mb-4">{project.description}</p>
+                            {project.description2 && <p className="text-black mb-4">{project.description2}</p>}
+                            <p className="font-bold text-black text-lg mb-4">{project.description3}</p>
+                            {project.description4 && <p className="text-black mb-4">{project.description4}</p>}
                         </motion.div>
                     ))}
                 </div>
@@ -59,4 +63,3 @@ export default function Projects() {
         </div>
     );
 }
-
