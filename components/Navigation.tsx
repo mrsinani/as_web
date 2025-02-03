@@ -10,12 +10,12 @@ export default function Navigation() {
     const isActive = (path: string) => pathname === path;
 
     return (
-        <nav className="w-full fixed top-0 left-0 z-50 bg-[#] ">
-            <div className="z-50 container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between ">
-                <Link href="/" className="z-50 text-2xl font-bold text-[#5F7D6E] mb-4 sm:mb-0">
+        <nav className="w-full fixed top-0 left-0 z-50 bg-[#]">
+            <div className="z-50 container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
+                <Link href="/" className="z-50 text-2xl sm:text-3xl md:text-4xl font-bold text-[#5F7D6E] mb-4 sm:mb-0">
                     personal website
                 </Link>
-                <div className="z-50 flex space-x-8 max-w-full text-xs sm:text-sm">
+                <div className="z-50 flex flex-wrap space-x-4 text-xs sm:text-sm md:text-base lg:text-lg">
                     {/* Navigation links */}
                     {[
                         { href: '/about', label: 'ABOUT' },
@@ -32,6 +32,7 @@ export default function Navigation() {
                                 "z-50 text-[#5F7D6E]/100 hover:text-white transition-colors",
                                 isActive(href) && "z-50 text-white font-semibold"
                             )}
+                            style={{ fontSize: 'clamp(0.75rem, 2vw, 1rem)' }} // Adjust font size dynamically
                         >
                             {label}
                         </Link>
