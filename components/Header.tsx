@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Header: React.FC = () => {
     return (
         <header className="text-center mb-12 bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
-            <h1 className="text-4xl font-bold mb-4 text-white">personal website</h1>
+            <h1 style={{ color: '#5F7D6E' }}>personal website</h1>
             <nav>
                 <ul className="flex justify-center space-x-4">
                     <li><Link href="#about" className="text-blue-600 hover:text-white">About</Link></li>
@@ -18,4 +18,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-

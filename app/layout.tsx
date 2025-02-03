@@ -7,8 +7,8 @@ import Navigation from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: 'Danaid Sinani - Personal Website',
-    description: 'Computer Science student at Boston University, passionate about AI and software development.'
+    title: 'Anisa Spaho - Personal Website',
+    description: 'Personal website of Anisa Spaho, student at Suffolk University.',
 }
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`bg-[#9caf88] ${inter.className}`}>
+            <body className={`bg-[#3F322F] ${inter.className}`}>
                 {/* <AuroraBackground className="min-h-screen"> */}
                 <div className="w-full">
                     <Navigation />
