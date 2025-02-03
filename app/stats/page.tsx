@@ -19,7 +19,7 @@ export default function Stats() {
                     transition={{ delay: 0.2 }}
                 >
                     <p className="text-4xl font-bold text-black-600">3.80</p>
-                    <p className="text-black">Current GPA at Suffolk University</p>
+                    <p className="text-black">Current GPA</p>
                 </motion.div>
                 <motion.div 
                     className="text-center p-6  rounded-lg"
