@@ -16,7 +16,7 @@ export default function About() {
             variants={contentAnimation}
             className="max-w-3xl mx-auto bg-[#4E6A5B]/90 backdrop-blur-sm p-8 rounded-xl shadow-lg mt-32"
         >
-            <h1 className="text-3xl font-bold mb-6 text-[#00000]">about me</h1>
+            <h1 className="text-3xl font-bold mb-6 text-[#00000]">About Me</h1>
             <div className="space-y-6 text-black">
             <p>
             Hi there! I’m Anisa, a marketing and mathematics student at Suffolk University, and I 
