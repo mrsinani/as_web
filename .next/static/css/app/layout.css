@@ -781,6 +781,12 @@ video {
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .bg-\[\#3F322F\] {
   --tw-bg-opacity: 1;
   background-color: rgb(63 50 47 / var(--tw-bg-opacity, 1));
