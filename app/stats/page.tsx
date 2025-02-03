@@ -10,7 +10,7 @@ export default function Stats() {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto bg-[#4E6A5B]/90 backdrop-blur-sm p-8 rounded-lg shadow-lg mt-32"
         >
-            <h1 className="text-3xl font-bold mb-8 text-black">stats</h1>
+            <h1 className="text-3xl font-bold mb-8 text-black text-center">stats</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <motion.div 
                     className="text-center p-6 bg-[#4E6A5B]/0 rounded-lg"
