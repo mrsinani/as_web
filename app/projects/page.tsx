@@ -33,7 +33,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="pt-20 pb-20 ] z-10 overflow-y-auto">
+        <div className="pt-20 pb-20 z-10 overflow-y-auto">
             <motion.div
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
