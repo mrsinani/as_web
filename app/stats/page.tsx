@@ -12,7 +12,7 @@ export default function Stats() {
         >
             <h1 className="text-3xl font-bold mb-8 text-black text-center">Stats</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <motion.div 
+                <motion.div
                     className="text-center p-6 bg-[#4E6A5B]/0 rounded-lg"
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
